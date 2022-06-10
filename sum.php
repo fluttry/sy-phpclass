@@ -1,3 +1,8 @@
+<?php
+// include 'variable.php';
+    require 'variable.php';  //
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +13,7 @@
 </head>
 <body>
     <?php 
-    $x=10;
-    $y=15;
-    echo "The sum of x and y is :" > $x + $y;
-    
+    echo "The sum of x and y is :" . ($x + $y);
     ?>
 </body>
 </html>
