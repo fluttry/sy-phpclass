@@ -1,6 +1,6 @@
 <?php
 
-$username="shyam";
+include 'userdata.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,14 +25,14 @@ $username="shyam";
             <a class="p-2 text-dark" href="/project.html">Projects</a>
             <a class="p-2 text-dark" href="/progress.html">Progress</a> <!-- coursewa-->
         </nav>
-        <a class="btn btn-outline-primary" href="https://m.me/manish.lokbidhi">fb Chat</a>
+        <a class="btn btn-outline-primary" href="<?php echo $fblink; ?>">fb Chat</a>
     </header>
     <div class="masthead text-center text-white purple p-4">
         <div class="masthead-content">
             <div class="container">
                 <h1 class="masthead-heading mb-0">Hello there !</h1>
                 <h2 class="masthead-subheading mb-0">I am <?php echo $username; ?></h2>
-                <a href="https://github.com/manishlok" class="btn btn-primary btn-xl rounded-pill mt-5">My GitHub
+                <a href="<?php echo $github; ?>" class="btn btn-primary btn-xl rounded-pill mt-5">My GitHub
                     Profile</a>
             </div>
         </div>
